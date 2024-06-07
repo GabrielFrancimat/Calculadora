@@ -4,10 +4,10 @@ import math
 
 color1 = "#0f0f0f"  # cor Black/Preto
 color2 = "#f08502"  # cor Orange/Laranja
-color3 = "#78766f"  # cor Gray/Cinza
+color3 = "#78766f"  # cor Brown/Marrom
 color4 = "#ffffff"  # cor White/Branco
 color5 = "#03e6ff"  # cor Cyan/Ciano
-color6 = "#bbc7be"  # cor
+color6 = "#bbc7be"  # cor Gray/Cinza
 
 window = Tk()
 window.title("Calculadora-Padrão")
@@ -29,8 +29,6 @@ value_text = StringVar()
 # Funções para o código
 
 # Função de inserir valores
-
-
 def input_values(event):
     global all_values
 
@@ -40,8 +38,6 @@ def input_values(event):
     value_text.set(all_values)
 
 # Função de calcular
-
-
 def calculate():
     global all_values
 
@@ -55,8 +51,6 @@ def calculate():
         all_values = ""
 
 # Função de limpar tela
-
-
 def clear_screen():
     global all_values
 
@@ -64,8 +58,6 @@ def clear_screen():
     value_text.set("")
 
 # Função de remover o último caractere
-
-
 def clear_last():
     global all_values
 
@@ -73,8 +65,6 @@ def clear_last():
     value_text.set(all_values)
 
 # Função para calcular 1/x
-
-
 def calculate_fraction():
     global all_values
 
@@ -103,18 +93,6 @@ def change_token():
         except ValueError:
             value_text.set("Erro")
             all_values = ""
-
-# Função para calcular a potência de qualquer valor
-# def calculate_potency():
-#     global all_values
-
-#     if all_values:
-#         try:
-#             all_values = str(float(all_values))
-#             value_text.set(all_values)
-#         except ValueError:
-#             value_text.set("Erro")
-#             all_values = ""
 
 
 # Criando Label
